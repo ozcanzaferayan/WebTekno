@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Webtekno",
+  "homepage_url": "http://www.webtekno.com",
+  "update_url": "https://github.com/ozcanzaferayan/webtekno/master/chrome/updates.xml",
+  "version": "0.9.4",
+  "description": "Webtekno içeriklerine ulaşmanın en kolay yolu",
+  "browser_action": {
+      "default_title": "Webtekno",
+      "default_icon": "img/icon.png",
+      "default_popup": "popup.html"
+  },
+  "icons":{
+    "128":"img/icon.png"
+  },
+  "options_page": "options.html",
+  "background": { 
+    "scripts": 
+    [
+      "js/jquery-2.1.0.min.js",
+      "js/main.js",
+      "js/storage.js",
+      "js/requests.js",
+      "js/background.js"
+    ] },
+  "permissions": [
+    "notifications"
+    // , Magic API
+    // "https://api.import.io/store/data/0e7e253a-56cd-4d8a-9271-8d719299ede8/_query?input/webpage/url=http%3A%2F%2Fwww.webtekno.com&_user=e0bfe84c-9892-4289-a467-56e6df88a283&_apikey=e0bfe84c-9892-4289-a467-56e6df88a283%3AFfeT9bFuqhJUd7rycElD6LtfZDM%2FVpb5IXwVVr9jWqXt9w9MO%2F%2F%2FPnYJBIUYHiXKwq0gG3aCjLu2jy0vaYe9bQ%3D%3D"
+    ,
+    "https://api.import.io/store/data/de4d3e76-97e6-4148-b578-8fc8b69d0396/_query?input/webpage/url=http%3A%2F%2Fwww.webtekno.com%2F&_user=e0bfe84c-9892-4289-a467-56e6df88a283&_apikey=e0bfe84c-9892-4289-a467-56e6df88a283%3AFfeT9bFuqhJUd7rycElD6LtfZDM%2FVpb5IXwVVr9jWqXt9w9MO%2F%2F%2FPnYJBIUYHiXKwq0gG3aCjLu2jy0vaYe9bQ%3D%3D"
+  ]
+
+}
